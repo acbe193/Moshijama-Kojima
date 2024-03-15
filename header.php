@@ -22,11 +22,13 @@
         <!--Librerias de Estilos -->
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <?php
         // Enqueue custom CSS
         function enqueue_custom_css() {
             wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
         }
         add_action('wp_enqueue_scripts', 'enqueue_custom_css');
+        ?>
 
         <!--Estilos-->
         <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
