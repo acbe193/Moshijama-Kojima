@@ -24,7 +24,7 @@
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
         // Enqueue custom CSS
         function enqueue_custom_css() {
-            wp_enqueue_style('custom-style', get_template_directory_uri() . '/custom-style.css', array(), '1.0', 'all');
+            wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
         }
         add_action('wp_enqueue_scripts', 'enqueue_custom_css');
 
