@@ -25,13 +25,15 @@
         <?php
         // Enqueue custom CSS
         function enqueue_custom_css() {
-            wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+            wp_enqueue_style('style', get_template_directory_url() . '/style.css', array(), '1.0', 'all');
         }
         add_action('wp_enqueue_scripts', 'enqueue_custom_css');
         ?>
 
         <!--Estilos-->
-        <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
-        <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
+        <link href="<?php echo get_template_directory_url(); ?>/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://github.com/acbe193/Moshijama-Kojima/blob/main/style.css" rel="stylesheet">
     </head>
     <body>
+        <h3><?php echo bloginfo('template_url'); ?></h3>
+        <h3>BLOG</h3>
